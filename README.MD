@@ -1,3 +1,3 @@
 - Hey this Repository is for a Website about How the Internet Works.
-- Click on the Link here: [Link](https://www.google.com) to view the Website.
+- Click on the Link here: [Link](https://jaysrt.github.io/How-the-Internet-Works/) to view the Website.
 - But, it is under Maintenance yet. Please check back again if you can't view it.
