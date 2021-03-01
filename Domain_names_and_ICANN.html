@@ -51,26 +51,31 @@
   <!-- Fixed navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <a class="navbar-brand" href="#">The Internet</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="Aboutpage.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            How it works?
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Domain_names_and_ICANN.html">Domain names and ICANN</a></li>
+            <li><a class="dropdown-item" href="IP_Address_Packets_and_Routing.html">IP Addresses, Packets and Routing</a></li>
+            <li><a class="dropdown-item" href="#">Domain Name System (DNS)</a></li>
+            <li><a class="dropdown-item" href="#">HTTP and HTTPS protocols</a></li>
+            <li><a class="dropdown-item" href="#">W3C and HTML and CSS</a></li>
+          </ul>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -81,10 +86,21 @@
     <div class="col-lg-6 col-md-8 mx-auto">
         <main class="flex-shrink-0">
             <div class="container">
-            <h1 class="mt-5">How Domain names and ICANN came into picture.</h1>
-            <p class="lead">The Internet Corporation for Assigned Names and Numbers is an American multistakeholder group and nonprofit organization responsible for coordinating the maintenance and procedures of several databases related to the namespaces and numerical spaces of the Internet, ensuring the network's stable and secure operation.</p>
-            <p>ICANN performs the actual technical maintenance work of the Central Internet Address pools and DNS root zone registries pursuant to the Internet Assigned Numbers Authority (IANA) function contract.</p>
-            <p>Back to <a href="/docs/5.0/examples/sticky-footer/">the default sticky footer</a> minus the navbar.</p>
+            <h1 class="mt-5">How Domain names and ICANN work?</h1>
+                <p></p>
+            <p><img src="images/375px-Icann_logo.svg.png" alt="ICANN" width="550" height="439"></p>
+            <p class="lead">The Internet Corporation for Assigned Names and Numbers is an American multi-stakeholder group and nonprofit organization responsible for coordinating the maintenance and procedures of several databases related to the namespaces and numerical spaces of the Internet, ensuring the network's stable and secure operation.</p>
+            <p class="lead">ICANN performs the actual technical maintenance work of the Central Internet Address pools and DNS root zone registries pursuant to the Internet Assigned Numbers Authority (IANA) function contract.</p>
+            <p class="lead">Much of its work has concerned the Internet's global Domain Name System (DNS), including policy development for internationalization of the DNS system, introduction of new generic top-level domains (TLDs), and the operation of root name servers. The numbering facilities ICANN manages include the Internet Protocol address spaces for IPv4 and IPv6, and assignment of address blocks to regional Internet registries. ICANN also maintains registries of Internet Protocol identifiers.</p>
+            <p></p>
+                <p><img src="images/maxresdefault.jpg" alt="ICANN" width="600" height="337"></p>
+                <p class="lead">A domain name is an identification string that defines a realm of administrative autonomy, authority or control within the Internet. Domain names are used in various networking contexts and for application-specific naming and addressing purposes.</p>
+                <p class="lead">Domain names are formed by the rules and procedures of the Domain Name System (DNS). Any name registered in the DNS is a domain name. Domain names are organized in subordinate levels (subdomains) of the DNS root domain, which is nameless. The first-level set of domain names are the top-level domains (TLDs), including the generic top-level domains (gTLDs), such as the prominent domains com, info, net, edu, and org, and the country code top-level domains (ccTLDs). </p>
+            <p><img src="images/domain-name.jpg" alt="ICANN" width="600" height="267"></p>
+
+
+
+
             </div>
         </main>
     </div>
@@ -92,7 +108,7 @@
 
 <footer class="footer mt-auto py-3 bg-light">
   <div class="container">
-    <span class="text-muted">Place sticky footer content here.</span>
+    <span class="text-muted"></span>
   </div>
 </footer>
 
