@@ -48,7 +48,7 @@
 <body class="d-flex flex-column h-100">
 
 <header>
-    <!-- Fixed navbar -->
+    <!-- navbar menu -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">The Internet</a>
@@ -65,21 +65,18 @@
                         <a class="nav-link active" href="Aboutpage.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             How it works?
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="Domain_names_and_ICANN.html">Domain names and ICANN</a>
-                            </li>
-                            <li><a class="dropdown-item" href="IP_Address_Packets_and_Routing.html">IP Addresses,
-                                Packets and Routing</a></li>
-
-                            <li><a class="dropdown-item" href="DNS.html">Domain Name System (DNS)</a></li>
-                            <li><a class="dropdown-item" href="HTTP_HTTPS_protocols.html">HTTP and HTTPS protocols</a>
-                            </li>
-                            <li><a class="dropdown-item" href="W3C_HTML_CSS.html">W3C and HTML and CSS</a></li>
-                        </ul>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="Domain_names_and_ICANN.html">Domain names and ICANN</a>
+                            <a class="dropdown-item" href="#">IP Addresses, Packets
+                                and Routing</a>
+                            <a class="dropdown-item" href="DNS.html">Domain Name System (DNS)</a>
+                            <a class="dropdown-item" href="HTTP_HTTPS_protocols.html">HTTP and HTTPS protocols</a>
+                            <a class="dropdown-item" href="W3C_HTML_CSS.html">W3C and HTML and CSS</a>
+                        </div>
                     </li>
                 </ul>
             </div>
