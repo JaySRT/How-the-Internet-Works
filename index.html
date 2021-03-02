@@ -46,38 +46,40 @@
 <body>
 
 <header>
-    <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-muted">Add some information about the album below, the author, or any other
-                        background context. Make it a few sentences long so folks can pick up some informative tidbits.
-                        Then, link them off to some social networking sites or contact information.</p>
-                </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                        <li><a href="#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="#" class="text-white">Email me</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container">
-            <a href="https://jaysrt.github.io/How-the-Internet-Works/" class="navbar-brand d-flex align-items-center">
-
-                <strong>Home</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- navbar menu -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">The Internet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Aboutpage.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            How it works?
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="Domain_names_and_ICANN.html">Domain names and ICANN</a>
+                            <a class="dropdown-item" href="IP_Address_Packets_and_Routing.html">IP Addresses, Packets
+                                and Routing</a>
+                            <a class="dropdown-item" href="DNS.html">Domain Name System (DNS)</a>
+                            <a class="dropdown-item" href="HTTP_HTTPS_protocols.html">HTTP and HTTPS protocols</a>
+                            <a class="dropdown-item" href="W3C_HTML_CSS.html">W3C and HTML and CSS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 </header>
 
 <main>
@@ -168,7 +170,12 @@
                         </svg>
 
                         <div class="card-body">
-                            <p class="card-text">Write here about Domain Name System (DNS)</p>
+                            <p class="card-text">The Domain Name System is a hierarchical and decentralized naming
+                                system for computers to the Internet. It associates various information with domain
+                                names assigned to each of
+                                the participating entities. It translates more readily memorized domain names to the
+                                numerical IP addresses needed for locating and identifying computer services and devices
+                                with the underlying network protocols.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary"><a href="DNS.html"
@@ -191,7 +198,11 @@
                         </svg>
 
                         <div class="card-body">
-                            <p class="card-text">Write here about HTTP and HTTPS Protocols</p>
+                            <p class="card-text">HTTPS is the secured version of HTTP for confidential and private
+                                sharing of sensitive user data. While data being exchanged between a client and a server
+                                over HTTP protocol can be stolen by capturing the data packets in transit, the same
+                                cannot be done with data and webpages being sent over HTTPS protocol. HTTPS is now used
+                                more often by web users than the original non-secure HTTP.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary"><a
@@ -214,7 +225,12 @@
                         </svg>
 
                         <div class="card-body">
-                            <p class="card-text">Write here about W3C and HTML and CSS</p>
+                            <p class="card-text">The W3C is an international community that includes a full-time staff,
+                                industry experts, and several member organizations. These groups work together to
+                                develop standards for the World Wide Web. HTML and CSS are fundamental technologies for
+                                building Web pages:
+                                HTML for structure, CSS for style and layout, including WebFonts. Find
+                                resources for good Web page design as well as helpful tools.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary"><a
@@ -232,21 +248,14 @@
     </div>
 
 </main>
-
-<footer class="text-muted py-5">
-    <div class="container">
-        <p class="float-end mb-1">
-            <a href="#">Back to top</a>
-        </p>
-        <p class="mb-1"><a href="/">About this page</a></p>
-        <p class="mb-0">Visit our <a href="/">Github Profiles </a> or visit our other website: <a
-                href="/docs/5.0/getting-started/introduction/">History of the Internet.</a>.</p>
-    </div>
-</footer>
-
-
-<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
 </body>
